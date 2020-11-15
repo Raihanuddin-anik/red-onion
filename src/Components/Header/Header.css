@@ -1,0 +1,21 @@
+.header{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+   
+    background-color: white;
+}
+.logo{
+    height: 70%;
+    width: 30%;
+    padding: 15px;
+    
+}
+.others{
+    padding-top: 25px;
+}
+.others a{
+    text-decoration: none;
+    padding:5px;
+   
+}
