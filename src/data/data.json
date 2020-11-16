@@ -1,32 +1,36 @@
 [
     {
+      "category":"Lunch",
      "name":"Indian food",
       "isActive": false,
-      "key" : 2,
+      "key" : 1,
       "Price": "$23.99",
       "picture": "https://i.ibb.co/qnmVPLg/lunch4.png",
       "title": "How we dream about future",
       "email": "elizabethwillis@xanide.com"
     },
     {
+      "category":"Lunch",
       "name":"helthy meal plan",
        "isActive": false,
-       "key" : 2,
+       "key" : 1,
        "Price": "$23.99",
        "picture":"https://i.ibb.co/QpK6VRt/lunch6.png",
        "title": "How we dream about future",
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Lunch",
       "name":"Fried Chicken bento",
        "isActive": false,
-       "key" : 2,
+       "key" : 1,
        "Price": "$23.99",
        "picture": "https://i.ibb.co/jhJsXnS/lunch5.png",
        "title": "How we dream about future",
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Lunch",
       "name":"Taragon Rubbed-salmon",
        "isActive": false,
        "key" : 2,
@@ -36,6 +40,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Lunch",
       "name":"beef stek",
        "isActive": false,
        "key" : 2,
@@ -45,6 +50,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Lunch",
       "name":"hony solly salmon-fesh",
        "isActive": false,
        "key" : 2,
@@ -54,6 +60,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 6",
        "isActive": false,
        "key" : 3,
@@ -63,6 +70,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 5",
       "key" : 3,
        "isActive": false,
@@ -72,6 +80,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 4",
       "key" : 3,
        "isActive": false,
@@ -81,6 +90,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 3",
        "isActive": false,
        "key" : 3,
@@ -90,6 +100,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 2",
        "isActive": false,
        "key" : 3,
@@ -99,6 +110,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Dinner",
       "name":"dinner 1",
        "isActive": false,
        "key" : 3,
@@ -108,6 +120,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 1",
        "isActive": false,
        "key" : 4,
@@ -117,6 +130,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 2",
        "isActive": false,
        "key" : 4,
@@ -126,6 +140,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 3",
        "isActive": false,
        "key" : 4,
@@ -135,6 +150,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 4",
        "isActive": false,
        "key" : 4,
@@ -144,6 +160,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 5",
        "isActive": false,
        "key" : 4,
@@ -153,6 +170,7 @@
        "email": "elizabethwillis@xanide.com"
      },
      {
+      "category":"Breakfast",
       "name":"breakfast 6",
        "isActive": false,
        "key" : 4,

@@ -1,25 +1,39 @@
 import React, { useEffect, useState } from 'react';
 import data from '../../data/data.json';
 import Section from '../Section/Section';
-import {Row} from 'react-bootstrap';
+import {Container, Row} from 'react-bootstrap';
 import './Main.css'
 
 const Main = () => {
-    const firstTem = data.slice(0, 18)
-    const [allData, setallData] = useState(firstTem);
-    console.log(allData);
+   
+    const [allData, setallData] = useState(data);
+    // console.log(allData);
+     const [category,setCategory] = useState('Lunch');
+    useEffect(()=> {
+       const filterData =  allData.filter(item => item.category === category)
+       setallData(filterData);
+    },[category])
+   
 
     return (
-      
-           <div className="row">
+     <Container>
+          
+          <div style={{textAlign:'center'}}>
+                <button onClick={()=> setCategory('Breakfast')}>Breakfast</button>
+                <button onClick={()=> setCategory('Lunch')}>Lunch</button>
+                <button onClick={()=> setCategory('Dinner')}>Dinner</button>
+          </div>
+               
+         
+           <Row className="foodData">
               
-            
+             
                 {
                     allData.map(data => <Section data={data}></Section>)
                 }
               
-           </div>
-      
+           </Row>
+     </Container>
     );
 };
 
