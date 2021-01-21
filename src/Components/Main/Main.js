@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext, useReducer } from 'react';
 import data from '../../data/data.json';
 import Section from '../Section/Section';
-import {Container, Row} from 'react-bootstrap';
+import {Button, Container, Row} from 'react-bootstrap';
+
 import './Main.css'
+
 
 const Main = () => {
    
-    const [allData, setallData] = useState(data);
+   
+   
+
+    const [allData, setallData] = useState([]);
     // console.log(allData);
      const [category,setCategory] = useState('Lunch');
     useEffect(()=> {
-       const filterData =  allData.filter(item => item.category === category)
+       const filterData =  data.filter(item => item.category === category)
        setallData(filterData);
     },[category])
    
@@ -19,9 +24,9 @@ const Main = () => {
      <Container>
           
           <div style={{textAlign:'center'}}>
-                <button onClick={()=> setCategory('Breakfast')}>Breakfast</button>
-                <button onClick={()=> setCategory('Lunch')}>Lunch</button>
-                <button onClick={()=> setCategory('Dinner')}>Dinner</button>
+                <Button className={category === 'Breakfast' ? 'active m-5' : 'm-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Breakfast')}>Breakfast</Button>
+                <Button className={category === 'Lunch' ? 'active m-5' : 'm-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Lunch')}>Lunch</Button>
+                <Button className={category === 'Dinner' ? 'active m-5' : 'm-5'} onClick={()=> setCategory('Dinner')}>Dinner</Button>
           </div>
                
          
@@ -33,6 +38,11 @@ const Main = () => {
                 }
               
            </Row>
+           <div style={{textAlign:'center'}} >
+                 <Button 
+                 
+                  >CheckOut Food</Button>
+            </div>
      </Container>
     );
 };

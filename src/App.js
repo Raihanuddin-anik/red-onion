@@ -1,21 +1,59 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './Components/Header/Header';
-import Banner from './Components/Banner/Banner';
-import Main from './Components/Main/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Mainpage from './Components/MainPage/Mainpage';
+import FoodDetail from './Components/FoodDetail/FoodDetail';
+import LogIn from './Components/LogIn/LogIn';
+import Delivary from './Components/Delivary/Delivary';
+import Notfound from './Components/Notfound/Notfound';
+import { useState } from 'react';
+import { createContext } from 'react';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
+ 
+ export const userContext = createContext();
 
 
 function App() {
+ 
+ 
+  
+  const [logedInUser, setlogedInUser] = useState([]);
   return (
-    <div>
-     
-      <Header></Header>
-      <Banner></Banner>
-      <Main></Main>
+    <userContext.Provider value={
+      [logedInUser, setlogedInUser]
+      }>
+       
+       <Router>
+         <Header></Header>
+         <Switch>
+            <Route exact path="/">
+              <Mainpage></Mainpage>
+            </Route>
+            <Route path ="/details/:Id">
+              <FoodDetail></FoodDetail>
+            </Route>
+            <Route path ="/login">
+            <LogIn></LogIn>
+            </Route>
+            <PrivateRoute to="/purshes">
+            <Delivary></Delivary>
+            </PrivateRoute>
+            <Route path="/*">
+              <Notfound></Notfound>
+            </Route>
+         </Switch>
+       </Router>
       
-    </div>
+       
+      
+    </userContext.Provider>
   );
 }
 
