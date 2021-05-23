@@ -11,12 +11,12 @@
 }
 .banner-text{
     position: absolute;
-    left: 40%;
+    left: 30%;
     top:30%;
 }
 .banner-text input{
     border-radius: 20px;
-    width:60%;
+    width:50%;
     height: 35px;
     border: 1px solid white;
     border-style: none;
@@ -28,7 +28,7 @@
 }
 .banner-text button
 {
-    padding: 10px 20px 10px 20px;
+    padding: 7px 20px 7px 20px;
     border-radius: 17px;
     border: 1px solid white;
     outline: none;

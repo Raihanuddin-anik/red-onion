@@ -1,23 +1,47 @@
+import { faMinus, faPlus, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext, useState } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
-import { userContext } from '../../App';
+import { secondContext, userContext } from '../../App';
 import data from '../../data/data.json';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './FoodDetail.css'
+import { addToDatabaseCart } from '../../utilities/databaseManager';
  
 
 
 const FoodDetail = () => {
+    const notify = () => toast("Food added to your Cart!");
     const { Id } = useParams();
-    const matchData = data.find(pd => pd.key == Id);
-   
+    const product = data.find(pd => pd.key == Id);
+    const [count , setcount] = useState(1);
+    const [cartProduct, setCartProduct] = useContext(secondContext);
    
 
-    const [count , setcount] = useState([1])
+    const handleAddProduct =(product) =>{
+      console.log(product)
+      const secletedData = {
+        key : product.key,
+        price: product.Price,
+        name: product.name,
+        picture: product.picture,
+        quantity: count
+    }
+        const totalData = [...cartProduct, secletedData]
+     
+        setCartProduct(totalData)
+       
+     alert("Your Food added Click to the Cart Button, at The NavBar ")
     
+    }
+
+
     const handleIncrease = () =>{
         
-        const newCount = Object.keys({matchData}).length ;
+        const newCount = Object.keys({matchData: product}).length ;
+        console.log(newCount)
         const TotalCount = newCount + count * 1;
          
        ;
@@ -35,17 +59,17 @@ const FoodDetail = () => {
     }
 
     return (
-        <Container>
-            <Row>
-            <Col md={6}>
-                <h2>{matchData.name}</h2>
+        <div className="container">
+            <div className="row">
+            <div className="col-md-6 col-sm-12">
+                <h2>{product.name}</h2>
                 <p>
-                    {matchData.title}.</p>
-                     <div className="cart">
-                        
-                        { <span><button  onClick={()=>handleIncrease()}>+</button>  <h4>{count}</h4>
-                         <button  onClick={()=>handleDecrease()}> - </button> </span>
-                         }
+                    {product.title}.</p>
+                     <div >
+                     <b className="fs-3">{product.Price}</b>
+                         <span  className="cart"><FontAwesomeIcon style={{cursor:"pointer"}} icon={faMinus} onClick={()=>handleDecrease()}/>  <b className="p-3">{count}</b>
+                         <FontAwesomeIcon style={{cursor:"pointer"}} icon={faPlus} onClick={()=>handleIncrease()}/>  </span>
+                         
                        
                 
                      </div>
@@ -53,13 +77,18 @@ const FoodDetail = () => {
                 
                 <br/>
                 <br/>
-               <Link to="/purshes"> <Button> Add Food</Button></Link>
+               <Link onClick={()=>handleAddProduct(product)}  ><Button variant="danger" onClick={notify} style={{borderRadius:"20px",paddingRight:"20px",paddingLeft:"20px"}}><FontAwesomeIcon icon={faShoppingCart}>  </FontAwesomeIcon> Add Food</Button>
+               <ToastContainer 
+               autoClose={1500} />
+               </Link>
                  
-            </Col>
+            </div >
 
-                 <Col md={6}><img src={matchData.picture} alt=""/></Col>
-            </Row>
-        </Container>
+                 <div className="col-md-6 col-sm-12 mt-5">
+                     <img src={product.picture} alt=""/>
+                 </div>
+            </div>
+        </div>
     );
 };
 

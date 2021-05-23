@@ -4,9 +4,10 @@
      "name":"Indian food",
       "isActive": false,
       "key" : 1,
-      "Price": "$23.99",
+      "title1": "How we Dream about our futures",
+      "Price": "23.99",
       "picture": "https://i.ibb.co/qnmVPLg/lunch4.png",
-      "title": "How we dream about future",
+      "title": "First off though, is it brussel sprouts or brussels sprouts? It’s actually Brussels sprouts, after Brussels, the capital of Belgium. ?",
       "email": "elizabethwillis@xanide.com"
       
     },
@@ -15,9 +16,10 @@
       "name":"helthy meal plan",
        "isActive": false,
        "key" : 2,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture":"https://i.ibb.co/QpK6VRt/lunch6.png",
-       "title": "How we dream about future",
+       "title": "i am a food blog is an award winning food blog that’s been around since 2010 featuring hundreds of easy, fun, and delicious!",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -25,9 +27,10 @@
       "name":"Fried Chicken bento",
        "isActive": false,
        "key" : 3,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/jhJsXnS/lunch5.png",
-       "title": "How we dream about future",
+       "title": "Smashed brussel sprouts are sprouts that are cooked until tender (usually by boiling), dried, tossed in oil, then smashed.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -35,9 +38,10 @@
       "name":"Taragon Rubbed-salmon",
        "isActive": false,
        "key" : 4,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/MGPQBJn/lunch3.png",
-       "title": "How we dream about future",
+       "title": "Smashed brussel sprouts are sprouts that are cooked until tender (usually by boiling), dried, tossed in oil, then smashed.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -45,9 +49,10 @@
       "name":"beef stek",
        "isActive": false,
        "key" : 5,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture":"https://i.ibb.co/hM1BJSN/lunch2.png",
-       "title": "How we dream about future",
+       "title": "This really is the absolute easiest Spinach and Artichoke Pizza! Garlicky spreadable cheese, canned artichokes, fresh s!",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -55,9 +60,10 @@
       "name":"hony solly salmon-fesh",
        "isActive": false,
        "key" : 6,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture":"https://i.ibb.co/Y8hGTbQ/lunch1.png",
-       "title": "How we dream about future",
+       "title": "These Harissa Meatballs with Whipped Feta are perfect for an easy SOS dinner! Store-bought meatballs, bell peppers, zucch.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -65,29 +71,32 @@
       "name":"dinner 6",
        "isActive": false,
        "key" : 7,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/3c4mDvD/dinner6.png",
-       "title": "How we dream about future",
+       "title": "This just in: guess what I’ve made six times in the last two weeks? You’re looking at it. I officially belong to the elite club .",
        "email": "elizabethwillis@xanide.com"
      },
      {
       "category":"Dinner",
       "name":"dinner 5",
       "key" : 8,
+      "title1": "How we Dream about our futures",
        "isActive": false,
-       "Price": "$23.99",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/4MKHVQ9/dinner5.png",
-       "title": "How we dream about future",
+       "title": "Well-tested interesting recipes, food science, techniques, equipment, and even food histories. Also has a highly-rated podca.",
        "email": "elizabethwillis@xanide.com"
      },
      {
       "category":"Dinner",
       "name":"dinner 4",
       "key" : 9,
+      "title1": "How we Dream about our futures",
        "isActive": false,
-       "Price": "$23.99",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/SvHptZ9/dinner4.png",
-       "title": "How we dream about future",
+       "title": "Variety of recipes and cooking-related articles with a focus on thoughtful and stylish living. Many recipes have flavorful twists.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -95,9 +104,10 @@
       "name":"dinner 3",
        "isActive": false,
        "key" : 10,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/9txMWCc/dinner3.png",
-       "title": "How we dream about future",
+       "title": "Variety of recipes for main meals, baking, drinks, and more. Recipes are made with accessible ingredients you can buy from your local.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -105,9 +115,10 @@
       "name":"dinner 2",
        "isActive": false,
        "key" : 11,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/HNCcZfL/dinner2.png",
-       "title": "How we dream about future",
+       "title": "Elegant, flavorful recipes that are simple to make and mainly vegan and gluten-free. All recipes can be made in under 30 minutes, with one bowl, or with 10 ingredients.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -115,9 +126,10 @@
       "name":"dinner 1",
        "isActive": false,
        "key" : 12,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/L0FFj0r/dinner1.png",
-       "title": "How we dream about future",
+       "title": "Primarily in-house developed recipes with seasonal ingredients, along with an archives of over 30 years’ worth of old family recipes. Most recipes use whole foods and are double-tested in real home kitchens.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -125,9 +137,10 @@
       "name":"breakfast 1",
        "isActive": false,
        "key" : 13,
-       "Price": "$23.99",
+       "Price": "23.99",
+       "title1": "How we Dream about our futures",
        "picture": "https://i.ibb.co/7tPw7Vr/breakfast1.png",
-       "title": "How we dream about future",
+       "title": "Primarily in-house developed recipes with seasonal ingredients, along with an archives of over 30 years’ worth of old family recipes. Most recipes use whole foods and are double-tested in real home kitchens.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -135,9 +148,10 @@
       "name":"breakfast 2",
        "isActive": false,
        "key" : 14,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/kc2fzFx/breakfast2.png",
-       "title": "How we dream about future",
+       "title": "Primarily in-house developed recipes with seasonal ingredients, along with an archives of over 30 years’ worth of old family recipes. Most recipes use whole foods and are double-tested in real home kitchens.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -145,19 +159,21 @@
       "name":"breakfast 3",
        "isActive": false,
        "key" : 15,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/7Wy9XgZ/breakfast3.png",
-       "title": "How we dream about future",
+       "title": "Primarily in-house developed recipes with seasonal ingredients, along with an archives of over 30 years’ worth of old family recipes. Most recipes use whole foods and are double-tested in real home kitchens.",
        "email": "elizabethwillis@xanide.com"
      },
      {
       "category":"Breakfast",
       "name":"breakfast 4",
+      "title1": "How we Dream about our futures",
        "isActive": false,
        "key" : 16,
-       "Price": "$23.99",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/zfzZM3K/breakfast4.png",
-       "title": "How we dream about future",
+       "title": "Primarily in-house developed recipes with seasonal ingredients, along with an archives of over 30 years’ worth of old family recipes. Most recipes use whole foods and are double-tested in real home kitchens.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -165,9 +181,10 @@
       "name":"breakfast 5",
        "isActive": false,
        "key" : 17,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/VCZgrMf/breakfast5.png",
-       "title": "How we dream about future",
+       "title": "Healthy dishes full of flavor with clear, flexible meal plans that have calorie counts and Weight Watchers Freestyle Smart Points. All meal plans are free and include grocery lists and brand recommendations.",
        "email": "elizabethwillis@xanide.com"
      },
      {
@@ -175,9 +192,10 @@
       "name":"breakfast 6",
        "isActive": false,
        "key" : 18,
-       "Price": "$23.99",
+       "title1": "How we Dream about our futures",
+       "Price": "23.99",
        "picture": "https://i.ibb.co/f8BQJsB/breakfast6.png",
-       "title": "How we dream about future",
+       "title": "Healthy dishes full of flavor with clear, flexible meal plans that have calorie counts and Weight Watchers Freestyle Smart Points. All meal plans are free and include grocery lists and brand recommendations.",
        "email": "elizabethwillis@xanide.com"
      }
   ]

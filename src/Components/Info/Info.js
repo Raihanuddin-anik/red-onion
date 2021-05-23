@@ -6,14 +6,14 @@ const Info = () => {
     
     
      return (
-        <Container>
+        <div className="container">
            
-           <Row>
+           <div className="row">
               {
                   data.map(Info => <InfoDetail Infodata ={Info}></InfoDetail>)
               } 
-           </Row>
-        </Container>
+           </div>
+        </div>
     );
 };
 

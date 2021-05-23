@@ -23,22 +23,22 @@ const Main = () => {
     return (
      <Container>
           
-          <div style={{textAlign:'center'}}>
-                <Button className={category === 'Breakfast' ? 'active m-5' : 'm-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Breakfast')}>Breakfast</Button>
-                <Button className={category === 'Lunch' ? 'active m-5' : 'm-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Lunch')}>Lunch</Button>
-                <Button className={category === 'Dinner' ? 'active m-5' : 'm-5'} onClick={()=> setCategory('Dinner')}>Dinner</Button>
+          <div style={{textAlign:'center',marginTop:"20px"}}>
+                <b className={category === 'Breakfast' ? 'text-danger text-decoration-underline m-5 fs-5' :  'text-muted m-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Breakfast')}>Breakfast</b>
+                <b className={category === 'Lunch' ? 'text-danger text-decoration-underline m-5 fs-5' : 'text-muted m-5'} style={{cursor: 'pointer'}} onClick={()=> setCategory('Lunch')}>Lunch</b>
+                <b className={category === 'Dinner' ? 'text-danger text-decoration-underline m-5 fs-5' : 'text-muted m-5'} onClick={()=> setCategory('Dinner')}>Dinner</b>
           </div>
                
          
-           <Row className="foodData">
+           <div className="row foodData">
               
              
                 {
                     allData.map(data => <Section data={data}></Section>)
                 }
               
-           </Row>
-           <div style={{textAlign:'center'}} >
+           </div>
+           <div style={{textAlign:'center',marginBottom:"20px",marginTop:"20px"}} >
                  <Button 
                  
                   >CheckOut Food</Button>
